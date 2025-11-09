@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicManagementSystem.Web", "ClinicManagementSystem.Web\ClinicManagementSystem.Web.csproj", "{099D620A-5FC2-438F-AE9C-CB7DB100F6FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicManagementSystem.Domain", "ClinicManagementSystem.Domain\ClinicManagementSystem.Domain.csproj", "{DF5F74E0-09DE-42B7-949F-487A24822468}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicManagementSystem.Repository", "ClinicManagementSystem.Repository\ClinicManagementSystem.Repository.csproj", "{9385F096-7DEF-4DEC-9FCE-8A29236E035E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicManagementSystem.Service", "ClinicManagementSystem.Service\ClinicManagementSystem.Service.csproj", "{3E666466-29B7-40FE-9D56-AB4E0951FF91}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{099D620A-5FC2-438F-AE9C-CB7DB100F6FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{099D620A-5FC2-438F-AE9C-CB7DB100F6FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{099D620A-5FC2-438F-AE9C-CB7DB100F6FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{099D620A-5FC2-438F-AE9C-CB7DB100F6FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF5F74E0-09DE-42B7-949F-487A24822468}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF5F74E0-09DE-42B7-949F-487A24822468}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF5F74E0-09DE-42B7-949F-487A24822468}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF5F74E0-09DE-42B7-949F-487A24822468}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9385F096-7DEF-4DEC-9FCE-8A29236E035E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9385F096-7DEF-4DEC-9FCE-8A29236E035E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9385F096-7DEF-4DEC-9FCE-8A29236E035E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9385F096-7DEF-4DEC-9FCE-8A29236E035E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E666466-29B7-40FE-9D56-AB4E0951FF91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E666466-29B7-40FE-9D56-AB4E0951FF91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E666466-29B7-40FE-9D56-AB4E0951FF91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E666466-29B7-40FE-9D56-AB4E0951FF91}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
