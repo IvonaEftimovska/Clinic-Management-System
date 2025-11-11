@@ -1,0 +1,16 @@
+C:\Users\eftim\Desktop\is\ClinicManagementSystem\ClinicManagementSystem.Repository\bin\Debug\net9.0\ClinicManagementSystem.Repository.deps.json
+C:\Users\eftim\Desktop\is\ClinicManagementSystem\ClinicManagementSystem.Repository\bin\Debug\net9.0\ClinicManagementSystem.Repository.dll
+C:\Users\eftim\Desktop\is\ClinicManagementSystem\ClinicManagementSystem.Repository\bin\Debug\net9.0\ClinicManagementSystem.Repository.pdb
+C:\Users\eftim\Desktop\is\ClinicManagementSystem\ClinicManagementSystem.Repository\bin\Debug\net9.0\ClinicManagementSystem.Domain.dll
+C:\Users\eftim\Desktop\is\ClinicManagementSystem\ClinicManagementSystem.Repository\bin\Debug\net9.0\ClinicManagementSystem.Domain.pdb
+C:\Users\eftim\Desktop\is\ClinicManagementSystem\ClinicManagementSystem.Repository\obj\Debug\net9.0\ClinicManagementSystem.Repository.csproj.AssemblyReference.cache
+C:\Users\eftim\Desktop\is\ClinicManagementSystem\ClinicManagementSystem.Repository\obj\Debug\net9.0\ClinicManagementSystem.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eftim\Desktop\is\ClinicManagementSystem\ClinicManagementSystem.Repository\obj\Debug\net9.0\ClinicManagementSystem.Repository.AssemblyInfoInputs.cache
+C:\Users\eftim\Desktop\is\ClinicManagementSystem\ClinicManagementSystem.Repository\obj\Debug\net9.0\ClinicManagementSystem.Repository.AssemblyInfo.cs
+C:\Users\eftim\Desktop\is\ClinicManagementSystem\ClinicManagementSystem.Repository\obj\Debug\net9.0\ClinicManagementSystem.Repository.csproj.CoreCompileInputs.cache
+C:\Users\eftim\Desktop\is\ClinicManagementSystem\ClinicManagementSystem.Repository\obj\Debug\net9.0\ClinicManagementSystem.Repository.sourcelink.json
+C:\Users\eftim\Desktop\is\ClinicManagementSystem\ClinicManagementSystem.Repository\obj\Debug\net9.0\ClinicMa.C16481AC.Up2Date
+C:\Users\eftim\Desktop\is\ClinicManagementSystem\ClinicManagementSystem.Repository\obj\Debug\net9.0\ClinicManagementSystem.Repository.dll
+C:\Users\eftim\Desktop\is\ClinicManagementSystem\ClinicManagementSystem.Repository\obj\Debug\net9.0\refint\ClinicManagementSystem.Repository.dll
+C:\Users\eftim\Desktop\is\ClinicManagementSystem\ClinicManagementSystem.Repository\obj\Debug\net9.0\ClinicManagementSystem.Repository.pdb
+C:\Users\eftim\Desktop\is\ClinicManagementSystem\ClinicManagementSystem.Repository\obj\Debug\net9.0\ref\ClinicManagementSystem.Repository.dll

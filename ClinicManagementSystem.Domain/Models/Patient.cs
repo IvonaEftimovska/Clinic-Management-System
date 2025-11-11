@@ -8,8 +8,10 @@ public class Patient : BaseEntity
     public required string FullName { get; set; } = "";
     [Required]
     public required DateTime BirthDate { get; set; }
-    public string Email { get; set; } = "";
-    public string Phone { get; set; } = "";
+    [Required]
+    public required string Email { get; set; } = "";
+    [Required]
+    public required string Phone { get; set; } = "";
 
     public virtual ICollection<Appointment>? Appointments { get; set; } = new List<Appointment>();
 }

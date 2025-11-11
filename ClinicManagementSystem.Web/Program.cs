@@ -1,47 +1,65 @@
+using ClinicManagementSystem.Repository.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using ClinicManagementSystem.Web.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ??
-                       throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlite(connectionString));
-builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+// -----------------------------------------------------
+// 1️⃣ Configure Services
+// -----------------------------------------------------
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddEntityFrameworkStores<ApplicationDbContext>();
+// Add MVC controllers and Razor views
 builder.Services.AddControllersWithViews();
+
+// Register DbContext and SQL Server connection
+// var host = Environment.GetEnvironmentVariable("DB_HOST");
+// var port = Environment.GetEnvironmentVariable("DB_PORT");
+// var database = Environment.GetEnvironmentVariable("DB_NAME");
+// var user = Environment.GetEnvironmentVariable("DB_USER");
+// var password = Environment.GetEnvironmentVariable("DB_PASS");
+
+var connectionString = $"Host=localhost;Port=5432;Database=clinic;Username=clinic_role;Password=admin";
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseNpgsql(connectionString));
+
+// Register ASP.NET Identity (for login / register)
+builder.Services.AddDefaultIdentity<IdentityUser>(options =>
+    {
+        options.SignIn.RequireConfirmedAccount = false;
+        options.Password.RequireDigit = true;
+        options.Password.RequireLowercase = true;
+        options.Password.RequireUppercase = false;
+        options.Password.RequireNonAlphanumeric = false;
+        options.Password.RequiredLength = 6;
+    })
+    .AddEntityFrameworkStores<ApplicationDbContext>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseMigrationsEndPoint();
-}
-else
+// -----------------------------------------------------
+// 2️⃣ Configure HTTP Request Pipeline
+// -----------------------------------------------------
+
+if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
 app.UseHttpsRedirection();
+app.UseStaticFiles();
+
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapStaticAssets();
-
+// Default route (HomeController → Index)
 app.MapControllerRoute(
-        name: "default",
-        pattern: "{controller=Home}/{action=Index}/{id?}")
-    .WithStaticAssets();
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
-app.MapRazorPages()
-    .WithStaticAssets();
+// Optional route for Razor Pages (Identity UI)
+app.MapRazorPages();
 
 app.Run();

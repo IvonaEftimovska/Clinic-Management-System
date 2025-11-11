@@ -11,4 +11,8 @@
       <ProjectReference Include="..\ClinicManagementSystem.Repository\ClinicManagementSystem.Repository.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="9.0.10" />
+    </ItemGroup>
+
 </Project>
